@@ -28,7 +28,7 @@ public class BoardDao {
 		
 		Context envCtx = (Context) initCtx.lookup("java:comp/env");//2. 등록된 네이밍 서비스로부터 등록된 자원을 가져옴
 		
-		DataSource ds = (DataSource) envCtx.lookup("jdbc/sangwon");//3. 자원들 중 원하는 jdbc/jskim 자원을 찾아내어 데이터소스를 가져옴
+		DataSource ds = (DataSource) envCtx.lookup("jdbc/jskim");//3. 자원들 중 원하는 jdbc/jskim 자원을 찾아내어 데이터소스를 가져옴
 		
 		Connection con = ds.getConnection();//4. 커넥션 얻어옴
 		
